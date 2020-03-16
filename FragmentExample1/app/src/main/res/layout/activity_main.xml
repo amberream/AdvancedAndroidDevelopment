@@ -33,6 +33,7 @@
         android:scaleType="centerCrop"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/beatles_anthology_box"
         app:srcCompat="@drawable/beatles_anthology_box"/>
 
     <TextView
@@ -73,4 +74,12 @@
             tools:layout_editor_absoluteY="288dp"/>
     </ScrollView>
 
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.example.android.fragmentexample.SimpleFragment"
+        tools:layout="@layout/fragment_simple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
 </android.support.constraint.ConstraintLayout>
