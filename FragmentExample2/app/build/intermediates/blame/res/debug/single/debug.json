@@ -24,12 +24,12 @@
         "source": "C:\\Users\\Amber\\StudioProjects\\AdvancedAndroidDevelopment\\FragmentExample2\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Amber\\StudioProjects\\AdvancedAndroidDevelopment\\FragmentExample2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Amber\\StudioProjects\\AdvancedAndroidDevelopment\\FragmentExample2\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "C:\\Users\\Amber\\StudioProjects\\AdvancedAndroidDevelopment\\FragmentExample2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\Amber\\StudioProjects\\AdvancedAndroidDevelopment\\FragmentExample2\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Amber\\StudioProjects\\AdvancedAndroidDevelopment\\FragmentExample2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Amber\\StudioProjects\\AdvancedAndroidDevelopment\\FragmentExample2\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\Amber\\StudioProjects\\AdvancedAndroidDevelopment\\FragmentExample2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_beatles_anthology_box.jpg.flat",

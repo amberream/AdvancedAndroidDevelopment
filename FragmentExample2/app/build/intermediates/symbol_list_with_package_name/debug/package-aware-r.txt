@@ -658,6 +658,7 @@ id beginning
 id blocking
 id bottom
 id buttonPanel
+id button_open
 id cancel_action
 id chains
 id checkbox
@@ -675,7 +676,7 @@ id end_padder
 id expand_activities_button
 id expanded_menu
 id forever
-id fragment
+id fragment_container
 id fragment_header
 id fragment_songheader
 id home

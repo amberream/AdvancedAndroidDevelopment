@@ -18,6 +18,7 @@ package com.example.android.fragmentexample;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -25,8 +26,10 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button button;
-    boolean fragmentDisplayed;
+    private static final String STATE_FRAGMENT = "state_of_fragment";
+
+    private Button button;
+    private boolean fragmentDisplayed;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +37,25 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         button = findViewById(R.id.button_open);
+
+        if (savedInstanceState != null)
+        {
+            fragmentDisplayed = savedInstanceState.getBoolean(STATE_FRAGMENT);
+            if (fragmentDisplayed)
+            {
+                button.setText(R.string.close);
+            }
+
+        }
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        // sample calls super last - is that necessary?
+        super.onSaveInstanceState(outState);
+        // fragments are not destroyed on config changes so no need to save any of that
+        // but we need to save the state of the button to reflect if the fragment is open
+        outState.putBoolean(STATE_FRAGMENT, fragmentDisplayed);
     }
 
     public void openFragment(View view) {
