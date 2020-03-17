@@ -6,7 +6,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RadioGroup;
+import android.widget.RatingBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 /**
@@ -27,8 +29,9 @@ public class SimpleFragment extends Fragment {
         // Inflate the layout for this fragment.
         final View rootView = inflater.inflate(R.layout.fragment_simple, container, false);
         final RadioGroup radioGroup = rootView.findViewById(R.id.radio_group);
+        final RatingBar ratingBar = rootView.findViewById(R.id.song_rating);
 
-        // TODO: Set the radioGroup onCheckedChanged listener.
+        // Set the radioGroup onCheckedChanged listener.
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int checkedId) {
@@ -41,6 +44,14 @@ public class SimpleFragment extends Fragment {
                 {
                     textView.setText(R.string.no_message);
                 }
+            }
+        });
+
+        // Set the rating bar onRatingBarChanged listenerr
+        ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+            @Override
+            public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
+                Toast.makeText(getContext(), "My Rating: " + ratingBar.getRating(), Toast.LENGTH_SHORT).show();
             }
         });
 
